@@ -1,0 +1,186 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Krona +One&family=Montserrat:ital,wght@0,600;1,600&display=swap');
+
+  
+:root {        /*  é para usar como algo global , mudar tudo*/
+ --cor-primaria: #ffffff; 
+ --cor-secundaria:#2F58CD ; 
+ --cor-terciaria: #FF8400;
+
+}
+
+*{
+margin: 0;   /* para que todo projeto fique com a margem o*/
+padding: 0;  /* para que todo projeto fique com a acochoamento o*/
+
+}
+
+
+body {
+   /* height: 100vp;                           Altura de todo o corpo do conteudo */
+    box-sizing: border-box;                   /* A borda do corpo (body) */
+   background-color: var(--cor-primaria);    /* A cor de fundo  */
+   color:var(--cor-secundaria)                           /* A cor das letras */
+
+}
+.cabecalho {
+padding: 2% 0% 0% 15%; 
+
+
+}
+
+.cabecalho_menu{
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho_menu_links {
+font-size: 1.5rem;
+font-weight: 600;
+color: var(--cor-terciaria);
+text-decoration: none ;
+
+}
+
+.titulo-destaque{
+
+    color: var(--cor-terciaria);  /* A cor das letras */
+
+
+}
+
+.apresentacao {
+ /*  margin: 10%  10%  ;   Da Valor em cima e em baixo (top / bootom)  */
+ padding: 5% 8% 10%;  /* valor da borda ao conteudo*/
+ display: flex;  /*Quando colocamos essa propriedade em um elemento, esse elemento se torna um flex container*/
+ align-items:center; /* Deixa tudo centralizado*/ 
+ justify-content:space-between /* Coloca um espaço entre os botões*/ 
+
+      }
+
+.apresentacao__conteudo {
+    width: 50% ; /* Largura*/ 
+    display: flex; 
+    flex-direction: column;  /* coloca os botoes um em cima do outro */ 
+    gap: 40px;  /* coloca espaçamento entre os botões  */ 
+
+}
+
+.apresentacao__conteudo__titulo{
+        font-size: 2.25rem; /* Tamanho da Fonte*/ 
+        font-family: 'Krona One', sans-serif; /* estilo da fonte */ 
+}
+
+.apresentacao__conteudo__paragrafo{
+      font-size: 1.5rem;
+      font-family: 'Montserrat', sans-serif; 
+
+}
+
+
+.apresentacao__links {
+    display: flex;  
+    align-items: center; /* Coloca tudo que está no container no centro */ 
+    flex-direction: column;
+    gap: 32px;
+
+}
+
+.apresentacao__subtitulo {
+    font-family: 'Krona One', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+
+
+}
+
+.apresentacao__links__botoes {
+     /*background-color: #22d4fd; */
+     border: 2px solid var(--cor-terciaria);   ; /* Se colocar borda junto com color da uma borda com cor*/
+     display: flex;  /* o diplay é necessario para colocar outras propriedades*/ 
+     gap: 16px; /* afasta o que é selecionado*/
+     width: 350px; /* largura*/ 
+    text-align: center; /* alinhar o texto no centro*/ 
+    border-radius: 40px; /* modifica a borda */
+    font-size: 1.5rem; /* tamanho */ 
+    font-weight: 600; 
+    padding: 21.5px  0px;
+    text-decoration: none ; /* isso tira o sublinhado do que se refere */
+    color: var(--cor-secundaria);
+    font-family:'Montserrat', sans-serif; /* estilo da letra*/ 
+    justify-content: center; /* deixa tudo no centralizado*/
+   
+}
+.apresentacao__links__botoes:hover{
+    cursor:pointer ;
+
+    background-color: var(--cor-primaria); /* coloca uma segunda cor quando o mouse passa por cima*/
+}
+
+.minha_foto {
+  display: flex;
+  width: 450px;
+  height: 450px;
+
+}
+
+.rodape {
+   padding: 24px;
+    background: var(--cor-terciaria);
+    color: var(--cor-primaria);
+    text-align:center ;
+    font-size: 1.5rem;
+}
+
+
+@media  (max-width: 900px) {
+   .cabecalho_menu_links{
+    font-size: 20px;
+   }
+
+
+    .apresentacao__links__botoes {
+      font-size: 10px;
+      padding: 5px;
+      width: 150px;
+    }
+    .rodape {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+      }
+
+      .minha_foto{
+        width: 300px;
+        height: 300px;
+        padding-right: 50px;
+       }
+       .apresentacao__conteudo__titulo {
+        font-size: 25px;
+       }
+
+       .apresentacao__conteudo__paragrafo{
+        font-size: 20px;
+
+       }
+
+       .apresentacao__links__botoes{
+        align-items: center;
+
+       }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
